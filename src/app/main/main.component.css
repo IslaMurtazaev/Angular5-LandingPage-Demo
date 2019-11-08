@@ -1,9 +1,33 @@
-main {
-  padding: 0px;
+div.multi-section,
+div.multi-section-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  /* background: #eee; */
+}
+div.multi-section img,
+div.multi-section-two img {
+  width: 100%;
 }
 
-main div h3,
-main div div h3 {
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+div.multi-section-two {
+  grid-template-areas: "b a";
+}
+main div:last-of-type {
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h3 {
   font-size: 2rem;
 }
 
@@ -15,6 +39,102 @@ main div.multi-section-two {
   padding: 50px;
 }
 main div.single-block {
-  width: 40%;
   text-align: center;
+  width: 50%;
+}
+
+/*------------------------- MEDIA QUERIES ---------------------------*/
+
+@media (max-width: 1300px) and (min-width: 1000px) {
+  main div.single-block {
+    width: 60%;
+  }
+  main div.single-block,
+  main div.multi-section,
+  main div.multi-section-two {
+    padding: 10px;
+    margin: 50px auto;
+  }
+  main {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 999px) and (min-width: 750px) {
+  main div.single-block {
+    width: 80%;
+  }
+  main div.single-block,
+  main div.multi-section,
+  main div.multi-section-two {
+    padding: 10px;
+    margin: 50px auto;
+  }
+
+  div.multi-section,
+  div.multi-section-two {
+    display: block;
+  }
+
+  div.multi-section img,
+  div.multi-section-two img {
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 749px) and (min-width: 600px) {
+  main div.single-block {
+    width: 80%;
+  }
+  main div.single-block,
+  main div.multi-section,
+  main div.multi-section-two {
+    padding: 10px;
+    margin: 50px auto;
+  }
+
+  div.multi-section,
+  div.multi-section-two {
+    display: block;
+  }
+
+  div.multi-section img,
+  div.multi-section-two img {
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 320px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  main div.single-block {
+    width: 80%;
+  }
+  main div.single-block,
+  main div.multi-section,
+  main div.multi-section-two {
+    padding: 10px;
+    margin: 50px auto;
+  }
+
+  div.multi-section,
+  div.multi-section-two {
+    display: block;
+  }
+
+  div.multi-section img,
+  div.multi-section-two img {
+    width: 70%;
+    margin: 0px auto;
+    display: block;
+  }
+
+  .primary-action {
+    padding: 5px;
+  }
 }
