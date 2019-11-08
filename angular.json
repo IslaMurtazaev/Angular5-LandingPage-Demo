@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-demo": {
+    "edu-mentor": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -47,18 +47,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-demo:build"
+            "browserTarget": "edu-mentor:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-demo:build:production"
+              "browserTarget": "edu-mentor:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-demo:build"
+            "browserTarget": "edu-mentor:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "angular-demo-e2e": {
+    "edu-mentor-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -104,7 +104,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "angular-demo:serve"
+            "devServerTarget": "edu-mentor:serve"
           }
         },
         "lint": {
@@ -121,7 +121,7 @@
       }
     }
   },
-  "defaultProject": "angular-demo",
+  "defaultProject": "edu-mentor",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
