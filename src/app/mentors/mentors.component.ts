@@ -94,8 +94,8 @@ export class MentorsComponent implements OnInit {
       },
       {
         id: 8,
-        name: "Чолпон Абды",
-        background: "Директор по маркетингу в NTT Ltd",
+        name: "Чолпон Абдырахманова",
+        background: "Маркетолог в NTT Ltd",
         photoUrl: "cholpon_abdy.jpg",
         linkedinUrl: "www.linkedin.com/in/abdyrakhmanova",
         facebookUrl: "https://www.facebook.com/abdyrakhman"
