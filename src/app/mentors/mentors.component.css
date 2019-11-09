@@ -1,0 +1,67 @@
+.header {
+  text-align: center;
+}
+
+.mentor-details {
+  width: 280px;
+  padding: 10px;
+  border: gray 2px solid;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.mentor-data {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.mentor-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100px;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mentor-buttons > a > i {
+  font-size: 1.2rem;
+}
+
+.mentor-name {
+  font-weight: bold;
+}
+
+.avatar {
+  /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+  background-image: url("assets/images/mentorUrl.jpg");
+
+  /* make a square container */
+  width: 250px;
+  height: 250px;
+
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+
+  /* center the image vertically and horizontally */
+  background-position: top center;
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 5px;
+  margin: auto;
+}
+
+/*------------------------- MEDIA QUERIES ---------------------------*/
+
+@media (max-width: 599px) and (min-width: 320px) {
+  .mentor-details {
+    width: 220px;
+  }
+
+  .avatar {
+    height: 190px;
+    width: 190px
+  }
+}
+
+
