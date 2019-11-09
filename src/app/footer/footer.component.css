@@ -23,6 +23,10 @@ footer ul li:first-of-type {
   color: #ddd;
 }
 
+#contacts > li {
+  width: max-content;
+}
+
 /*------------------------- MEDIA QUERIES ---------------------------*/
 
 @media (max-width: 749px) and (min-width: 600px) {
