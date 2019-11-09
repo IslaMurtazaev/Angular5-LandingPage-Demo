@@ -42,7 +42,7 @@ header .tagline a {
 
 /*------------------------- MEDIA QUERIES ---------------------------*/
 
-@media (max-width: 1300px) and (min-width: 1000px) {
+@media (max-width: 1300px) and (min-width: 1100px) {
   header {
     height: 800px;
   }
@@ -61,6 +61,16 @@ header .tagline a {
   }
   main {
     margin-top: 130px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+  header {
+    height: 500px;
+  }
+
+  header .tagline {
+    padding-top: 40px;
   }
 }
 

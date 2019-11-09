@@ -1,0 +1,59 @@
+<div id="mentors-carousel">
+  <p-carousel
+    [value]="mentors"
+    [numVisible]="3"
+    [numScroll]="1"
+    [circular]="true"
+    [autoplayInterval]="3000"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <p-header class="header">
+      <h3>Наши менторы</h3>
+    </p-header>
+    <ng-template let-mentor pTemplate="item">
+      <div class="mentor-details">
+        <div class="p-grid p-nogutter">
+          <div class="p-col-12">
+            <div
+              class="avatar"
+              [ngStyle]="{
+                'background-image':
+                  'url(assets/images/' +
+                  (mentor.photoUrl ? mentor.photoUrl : 'no-avatar.webp') +
+                  ')'
+              }"
+            ></div>
+          </div>
+          <div class="p-col-12 mentor-data">
+            <div class="mentor-name">{{ mentor.name }}</div>
+            <div class="mentor-background">{{ mentor.background }}</div>
+
+            <div class="mentor-buttons">
+              <a
+                *ngIf="mentor.linkedinUrl"
+                href="{{ mentor.linkedinUrl }}"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                *ngIf="mentor.facebookUrl"
+                href="{{ mentor.facebookUrl }}"
+                target="_blank"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                *ngIf="mentor.instagramUrl"
+                href="{{ mentor.instagramUrl }}"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

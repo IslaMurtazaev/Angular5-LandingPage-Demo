@@ -15,6 +15,11 @@ h3,
 h4 {
   font-family: Merriweather, Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h3 {
+  font-size: 2rem;
+}
+
 .container {
   width: 100%;
   max-width: 1500px;
@@ -26,20 +31,29 @@ h4 {
   color: #111;
 }
 
-.primary-action,
-.learn-more {
+.primary-action, .primary-action:hover,
+.learn-more, .learn-more:hover {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
   display: inline-block;
   font-size: 1.1rem;
-  width: 130px;
   color: #fff;
 }
 
 .primary-action {
   background: deeppink;
   text-decoration: none;
-  color: #eee;
   text-shadow: none;
 }
+
+@media (max-width: 599px) and (min-width: 320px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .primary-action {
+    padding: 5px;
+  }
+}
+

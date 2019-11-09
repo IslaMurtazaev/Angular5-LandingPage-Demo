@@ -27,10 +27,6 @@ main {
   padding: 20px;
 }
 
-h3 {
-  font-size: 2rem;
-}
-
 main div.single-block,
 main div.multi-section,
 main div.multi-section-two {
@@ -109,9 +105,6 @@ main div.single-block {
 }
 
 @media (max-width: 599px) and (min-width: 320px) {
-  h3 {
-    font-size: 1.5rem;
-  }
   main div.single-block {
     width: 80%;
   }
@@ -132,9 +125,5 @@ main div.single-block {
     width: 70%;
     margin: 0px auto;
     display: block;
-  }
-
-  .primary-action {
-    padding: 5px;
   }
 }
