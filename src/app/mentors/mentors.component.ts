@@ -44,14 +44,14 @@ export class MentorsComponent implements OnInit {
         id: 1,
         name: "Олья Пыхова",
         background: "Участник программ FLEX и U.S. - CAEF",
-        photoUrl: "olya_pykhova.png",
+        photoUrl: "olya_pykhova.jpg",
         facebookUrl: "https://www.facebook.com/olya.pyhova"
       },
       {
         id: 2,
         name: "Максат Алымкулов",
         background: "Аудитор в KPMG",
-        photoUrl: "maksat_alymbek.png",
+        photoUrl: "maksat_alymbek.jpg",
         facebookUrl: "https://www.facebook.com/maksat.alymkulov.3/",
         linkedinUrl: "http://linkedin.com/in/maksat-alymkulov-132458120"
       },
@@ -80,7 +80,7 @@ export class MentorsComponent implements OnInit {
         id: 6,
         name: "Дима Ким",
         background: 'Иллюзионист в шоу фокусников “Great Magic"',
-        photoUrl: "dima_kim.png",
+        photoUrl: "dima_kim.jpg",
         instagramUrl: "https://www.instagram.com/focus.kg/",
         facebookUrl: "https://www.facebook.com/Kimd1997"
       },
@@ -120,14 +120,14 @@ export class MentorsComponent implements OnInit {
         name: "Эрлан Жапаров",
         background:
           'Координатор бизнес-инкубатора "На Пределе" и бизнес-ивента "ГраблиNight"',
-        photoUrl: "erlan_zhaparov.png",
+        photoUrl: "erlan_zhaparov.jpg",
         facebookUrl: "https://www.facebook.com/ZhaparovErlan"
       },
       {
         id: 12,
         name: "Айдай Чекирова",
         background: "Журналист в финансово-информационном портале «Акчабар»",
-        photoUrl: "aidai_chekirova.png",
+        photoUrl: "aidai_chekirova.jpg",
         facebookUrl: "http://facebook.com/chekirova.aidai"
       },
       {
@@ -141,7 +141,7 @@ export class MentorsComponent implements OnInit {
         id: 14,
         name: "Канат Ногойбаев",
         background: 'Специалист по связям с общественностью и коммуникациям в “Coca Cola"',
-        photoUrl: "kanat_nogoibaev.png",
+        photoUrl: "kanat_nogoibaev.jpg",
         facebookUrl: "https://www.facebook.com/people/%D0%9A%D0%B0%D0%BD%D0%B0%D1%82-%D0%9D%D0%BE%D0%B3%D0%BE%D0%B9%D0%B1%D0%B0%D0%B5%D0%B2/100003951158429"
       },
       {
@@ -177,14 +177,14 @@ export class MentorsComponent implements OnInit {
         id: 19,
         name: "Гулиза Алмазбек",
         background: 'Специалист отдела маркетинга в “Coca Cola"',
-        photoUrl: "guliza_almazbek.png",
+        photoUrl: "guliza_almazbek.jpg",
         facebookUrl: "https://www.facebook.com/guliza.almazbekova"
       },
       {
         id: 20,
         name: "Айбек Аскарбеков",
         background: '”Master of human rights and democratization” в Centre for European Studies, Yerevan State University',
-        photoUrl: "aibek_askarbekov.png",
+        photoUrl: "aibek_askarbekov.jpg",
         facebookUrl: "https://www.facebook.com/askarbekovaibek"
       },
       {
